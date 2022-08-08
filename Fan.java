@@ -28,11 +28,7 @@ public class Fan {
      * If the cord is pulled on speed 3, fan returns to OFF which is 0
      */
     public void speedInc() {
-        if (speed == 3) {
-            speed = 0;
-        } else {
-            speed++;
-        }
+        speed = ((speed == 3) ? 0 : speed + 1);
     }
 
     /*
