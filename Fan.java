@@ -37,11 +37,7 @@ public class Fan {
      * then the direction setting is Backward
      */
     public void reverseDirection() {
-        if (direction == Direction.FORWARD) {
-            direction = Direction.BACKWARD;
-        } else {
-            direction = Direction.FORWARD;
-        }
+       direction = (direction == Direction.FORWARD) ? Direction.BACKWARD : Direction.FORWARD;
     }
 
     @Override
